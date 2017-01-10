@@ -2,7 +2,11 @@
       .col-1{ width: 33.33%;    }
   }
 
-  @font-face {
+  @media (max-width:800px) {
+        .col-1{ width: 33.33%;    }
+    }
+
+@font-face {
     font-family: fedraMonoBold;
     src: url('../fonts/FedraMono-Bold.otf');
   }
@@ -143,6 +147,7 @@ hr{
 .filter-block{
   position: fixed;
   left: 13%;
+  z-index: 1000;
 }
 
 #filter-hover{
@@ -157,6 +162,9 @@ hr{
   bottom: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  z-index: 950;
 }
 
 .projects-inside{
@@ -165,6 +173,7 @@ hr{
   left: 16.66%;
   top: 0;
   bottom: 0;
+  z-index: 950;
 }
 
 .right-column{
@@ -182,11 +191,12 @@ hr{
 }
 
 .nav-menu{
-  display:inline-block;
+  display: list-item;
   width:100%;
   font-family: fedraSerifNormal;
   padding:0 0 0 0;
   margin: 230% 0% 0% 10%;
+  list-style: none;
 
   -moz-transform:rotate(-90deg);
   -ms-transform:rotate(-90deg);
@@ -250,6 +260,7 @@ hr{
   background-color: #000;
   opacity: .07;
   width: 1px;
+  z-index: 900;
 }
 
     .line-1 {
@@ -332,11 +343,11 @@ hr{
 }
 
 .projects-left{
-  display:inline-block;
+  display:flex;
   width: 50%;
   padding-top: 20%;
-  -webkit-transition: width 2s, height 4s;
-  transition: all 0.4s ease-in-out;
+  /*-webkit-transition: width 2s, height 4s;*/
+  transition: all 0.2s ease-in-out;
 }
 
 .projects-right-container{
@@ -348,11 +359,11 @@ hr{
 }
 
 .projects-right{
-  display:inline-block;
+  display:flex;
   width: 50%;
   padding-bottom: 35%;
-  -webkit-transition: width 2s, height 4s;
-  transition: all 0.4s ease-in-out;
+  /*-webkit-transition: width 2s, height 4s;*/
+  transition: all 0.2s ease-in-out;
 
 }
 
@@ -364,8 +375,8 @@ hr{
   transform: scale(0);
   width:0;
   padding:0;
-  -webkit-transition: width 2s, height 4s;
-  transition: all 0.4s ease-in-out;
+  /*-webkit-transition: width 2s, height 4s;*/
+  transition: all 0.2s ease-in-out;
 }
 
 
@@ -393,8 +404,8 @@ hr{
 .feedback{
   position:fixed;
   display:inline-block;
-  top: 50px;
-  left: 10%;
+  top: 30px;
+  left: 30px;
   widht: 50px;
   height: 100px;
   text-decoration-color: white;

@@ -42,8 +42,9 @@ $('.project-filter').click(function(){
 
 $('.image-scroll').scroll(function(){
   var scroll_top = $(this).scrollTop();
+  console.log(scroll_top);
 
-  $('#feedback').text('currently at pos:' + scroll_top);
+  // $('#feedback').text('currently at pos:' + scroll_top);
 });
 
 

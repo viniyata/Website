@@ -328,6 +328,8 @@ hr{
   width: 50.02%;
   left: 33.33%;
   float: left;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .projects-left{
@@ -386,7 +388,12 @@ hr{
   width:97%;
   top: 4%;
   overflow-x: hidden;
-  scroll-snap-type: mandatory;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+#image-list{
+list-style: none;
 }
 
 .feedback{

@@ -206,18 +206,6 @@ hr{
   transform-origin: left top;
 }
 
-/*.nav-menu {
-    display: inline-block;
-    width: 40%;
-    font-family: fedraSerifNormal;
-    padding: 0 0 0 0;
-    margin: 140% 0% 0% 17%;
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    transform-origin: bottom right;
-}*/
 
 #project-name{
   color:#4A90E2;
@@ -337,7 +325,7 @@ hr{
 
 .projects-left-container{
   display:inline-block;
-  width:50%;
+  width: 50.02%;
   left: 33.33%;
   float: left;
 }
@@ -352,7 +340,7 @@ hr{
 
 .projects-right-container{
   display:inline-block;
-  left:0;
+  padding-left: 0.2%;
   right:66.66%;
   width: 50%;
   float: right;

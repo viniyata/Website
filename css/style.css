@@ -6,6 +6,8 @@
         .col-1{ width: 33.33%;    }
     }
 
+  /* put all media queries inside one  */
+
 @font-face {
     font-family: fedraMonoBold;
     src: url('../fonts/FedraMono-Bold.otf');
@@ -390,6 +392,21 @@ hr{
   overflow-x: hidden;
   padding-left: 0px;
   margin-top: 0px;
+  z-index: 950;
+}
+
+.false-image-scroll{
+  display:inline-block;
+  position:fixed;
+  background-color: white;
+  opacity: 0;
+  height:77%;
+  width:97%;
+  top: 4%;
+  overflow-x: hidden;
+  padding-left: 0px;
+  margin-top: 0px;
+  z-index: 1000;
 }
 
 #image-list{

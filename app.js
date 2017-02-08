@@ -6,9 +6,9 @@ $(document).ready(function(){
 
 
 
-// ** Project Selectors ** //
+////////// ** Project Selectors ** /////////////
 
-//hover function on Project Selectors : Ques & Ans
+//hover function on Project Selectors -Ques & Ans
 $( "li" ).hover(
   function() {
     $(this).css({"color":"#4A90E2"});
@@ -38,13 +38,20 @@ $('.project-filter').click(function(){
 });
 
 
-//inside project
+//////////////////////inside project////////////////////////
 
-$('.image-scroll').scroll(function(){
-  var scroll_top = $(this).scrollTop();
-  console.log(scroll_top);
+// $('.false-image-scroll').scroll(function(){
+//   var scroll_top = $(this).scrollTop();
+//   console.log(scroll_top);
+//   // $(scroll_top).show().siblings().hide();
+// });
 
-  // $('#feedback').text('currently at pos:' + scroll_top);
+
+
+$('.image-scroll li').each(function(index, value) {
+    scroll(function() {
+        $(value).show().siblings().hide();
+    }, 1000 * (index + 1));
 });
 
 

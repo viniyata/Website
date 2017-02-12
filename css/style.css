@@ -4,6 +4,44 @@
 
   @media (max-width:800px) {
         .col-1{ width: 33.33%;    }
+
+        .header-img{
+          align-content: center;
+        }
+
+        .right-column{
+        display: none !important;
+        }
+        .project-filter{
+          display: none;
+        }
+        .projects{
+          top: 50px !important;
+          min-width: 100% !important;
+          left: 0 !important;
+        }
+        .drawer-nav{
+          display: list-item;
+          width:100%;
+          z-index: 99999999999 !important;
+          font-family: fedraSansBookSC !important;
+          font-size:11px;
+          letter-spacing: 2px;
+          line-height:0%;
+        }
+        .navigation{
+          display: none;
+          align-content: center;
+          font-family: fedraSerifNormal;
+          padding:0 0 0 0;
+          list-style: none;
+          width: 12.66% !important;
+
+          -moz-transform:rotate(90deg);
+          -ms-transform:rotate(90deg);
+          -o-transform:rotate(90deg);
+          -webkit-transform:rotate(90deg);
+        }
     }
 
   /* put all media queries inside one  */
@@ -59,6 +97,7 @@ body{
   height: 100%;
   padding: 0px;
   color: #9B9B9B;
+  overflow: hidden;
 }
 
 

@@ -1,5 +1,6 @@
 $(document).ready(function(){
   //$('.nav-menu').css('width', '50%');
+  $('.drawer').drawer();
 
    $( '#nav-menu-leading:first' ).append( $( "<span id='project-name'>  / HYPER HEADPHONES</span>" ) );
   //  $('a:first').text('/ hyper headphones');

@@ -5,17 +5,31 @@
   <title>Viniyata Pany</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
-
+  <link rel="stylesheet" href="css/drawer.min.css">
 </head>
 
-<body>
+<body class="drawer drawer--top">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-menu-item" href="index.html">WORK</a></li>
+        <li><a class="drawer-menu-item" href="about.html">ABOUT</a></li>
+        <li><a class="drawer-menu-item" href="http://itp.viniyatapany.com/">BLOG</a></li>
+        <li><a class="drawer-menu-item" href="https://viniyata.wordpress.com/">MUSINGS</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- left navigation column , (nav) is a section -->
 
+
   <nav class="navigation">
 
-    <div class="header-img"> <img src="images/header-fish.png" alt="Viniyata Pany" height="20" width="68"> </div>
+    <div class="header-img"> <img class="fish-logo" src="images/header-fish.png" alt="Viniyata Pany" height="20" width="68"> </div>
     <div class="nav-menu">
       <a href="index.html" id="nav-menu-leading">WORK</a>
       <hr id="divider-style"></hr>
@@ -195,6 +209,8 @@
 
 
  <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js" charset="utf-8"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
  <script type="text/javascript" src="app.js"></script>
 
 </body>

@@ -8,15 +8,15 @@
 
 .drawer-nav {
     position: fixed;
-    z-index: 2;
+    z-index: 999;
     top: 0;
     overflow: hidden;
-    width: 16.25rem;
+    width: 30%;
     height: 100%;
 }
 .drawer-brand {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 3.75rem;
     display: block;
     padding-right: .75rem;
@@ -28,18 +28,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-right: 84.5%;
 }
 .drawer-menu-item {
     font-size: 1.5rem;
     display: block;
-    padding: .95rem;
+    padding: 1rem;
     text-decoration: none;
     color: #4A90E2;
+    /*text-shadow: 2px 2px 0px #ff000e;*/
+    text-shadow: 2px 2px 0px #00ff06;
 }
 .drawer-menu-item:hover {
-    text-decoration: underline;
-    color: #555;
-    background-color: transparent
+    text-decoration: none;
+    color: #ff00d8;
+    text-shadow: 9px 9px 3px #00ff06;
+    background-color: transparent;
 }
 .drawer-overlay {
     position: fixed;
@@ -56,15 +60,16 @@
 }
 .drawer--top .drawer-nav {
     top: -100%;
-    left: 0;
-    width: 100%;
+    left: 19px;
+    width: 15.5%;
+    padding: 0;
     height: auto;
     max-height: 100%;
     -webkit-transition: top .6s cubic-bezier(.19, 1, .22, 1);
     transition: top .6s cubic-bezier(.19, 1, .22, 1)
 }
 .drawer--top.drawer-open .drawer-nav {
-    top: 0
+    top: 90px;
 }
 .drawer--top .drawer-hamburger,
 .drawer--top.drawer-open .drawer-hamburger {
@@ -99,11 +104,12 @@
 .drawer-hamburger {
     position: fixed;
     z-index: 4;
-    top: 0;
+    top: 29px;
+    left: 37px;
     display: block;
     box-sizing: content-box;
     width: 2rem;
-    padding: 0;
+    padding: 5;
     padding: 18px .75rem 30px;
     -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
     transition: all .6s cubic-bezier(.19, 1, .22, 1);
@@ -129,7 +135,7 @@
     height: 2px;
     -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
     transition: all .6s cubic-bezier(.19, 1, .22, 1);
-    background-color: #222
+    background-color: rgba(255, 255, 255, 0);
 }
 .drawer-hamburger-icon:after,
 .drawer-hamburger-icon:before {

@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <title>Viniyata Pany</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/drawer.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="drawer drawer--top">
   <header role="banner">
+    <!-- Menu Fish @Max Width 800px -->
+    <img class="in-menu-img drawer-toggle" src="images/header-fish.png" alt="Viniyata Pany" height="20" width="68">
+    <!-- end of Menu Fish @Max Width 800px -->
     <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
       <span class="drawer-hamburger-icon"></span>
@@ -24,9 +28,12 @@
     </nav>
   </header>
 
-  <div class="grid-container"> <!-- background grid containter  -->
 
-        <div class="lines">
+<!-- Grid containter  -->
+  <div class="grid-container">
+
+<!-- Background lines  -->
+        <div class="in-lines">
           <div class="line-1"></div>
           <div class="line-2"></div>
           <div class="line-3"></div>
@@ -34,72 +41,64 @@
           <div class="line-5"></div>
           <div class="line-6"></div>
         </div>
+<!-- end of background lines  -->
 
 
+<!-- Left Navigation column -->
+<nav class="navigation">
 
-<nav class="navigation"> <!-- left navigation column , (nav) is a section -->
-
+  <!-- Menu Fish Default -->
   <div class="header-img"> <img src="images/header-fish.png" alt="Viniyata Pany" height="20" width="68"> </div>
+  <!-- end of Menu Fish Default -->
 
-  <div class="nav-menu">
-    <a href="index.html" id="nav-menu-leading">WORK</a>
-    <hr id="divider-style"></hr>
-    <a href="about.html" id="nav-menu-leading">ABOUT</a>
-    <hr id="divider-style"></hr>
-    <a href="http://itp.viniyatapany.com/" id="nav-menu-leading">BLOG</a>
-    <hr id="divider-style"></hr>
-    <a href="https://viniyata.wordpress.com/" id="nav-menu-leading">MUSINGS</a>
+  <!-- Left Column : Project Summary -->
+  <div class="project-summary">
+  <p class="summary-project-title">hyper headphones</p>
+  <!-- <p class="summary-intro-text">Smartphone app for automated carpool trips between home and office</p> -->
+  <p class="summary-text"><strong>Project:</strong> Academic </p>
+  <p class="summary-text"><strong>Duration:</strong> 2 Weeks</p>
+  <p class="summary-text"><strong>Role:</strong> Concept, Fabrication, Electronics, Programming, Physical Computing</p>
+  <p class="summary-text"><strong>Tools:</strong> Arduinio, p5.js, Laser Cutter</p>
   </div>
+  <!-- End of Left Column : Project Summary -->
 
-  <div class="email">
-  <a href="mailto:viniyata@gmail.com" id="email">viniyata@gmail.com</a>
-  </div>
+</nav>
+<!-- end of navigation column  -->
 
-</nav> <!-- end of navigation column  -->
-
-
+<!-- Right column  -->
 <section class="right-column-inside">
-  <p id="project-credits"> Tools: p5.js, arduino, fabrication
-    <br><br>Collaborator: Dhruv Damle</p>
-
-  <p id="copyright">&copy; 2016 Viniyata Pany</p>
-
+  <p id="project-credits"> Collaborator: Dhruv Damle</p>
+  <p id="copyright">&copy; 2017 Viniyata Pany</p>
 </section>
+<!-- end of Right column  -->
 
-  <div class="feedback"></div>
 
-  <section class="projects-inside"> <!-- project columns -->
+<!-- Project containter -->
+  <section class="projects-inside">
 
-    <div class="false-image-scroll"></div>
+    <div class="false-image-scroll"></div> <!--  test to track scrollTop / mouse position  -->
 
     <ul class="image-scroll">
-
       <!-- <img src="images/5-hyperheadphones-1165px.jpg" width=100% > -->
-      <li><img src="images/housemates/0-housemates.jpg" width=100% height=572px></li>
-      <li><img src="images/ed/creating/02-creatingchange.jpg" width=100% height=572px ></li>
-      <li><img src="images/ed/facilitator/06-facilitatorsguidebook.jpg" width=100%></li>
+      <li><img src="images/housemates/0-housemates.jpg" width=100% height=40%></li>
+      <li><img src="images/ed/creating/02-creatingchange.jpg" width=100% height=40%></li>
+      <li><img src="images/ed/facilitator/06-facilitatorsguidebook.jpg" width=100% height=40%></li>
       <li><img src="images/ed/gp-documentation/07.-gpdocumentation.jpg" width=100% height=100%></li>
-
       <li><iframe src="https://player.vimeo.com/video/146341206?byline=0&portrait=0" width="1165" height="571" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
-
     </ul>
 
 
-
     <div class="project-intro-text">
-
       <!-- <p id="title-text-styling">Hyper Headphones</p> -->
-
       <p id="intro-text-styling">The Hyper Headphones are designed to offer a sonic experience wherein one can control objects within a soundscape. The headphones respond to specific body gestures to change the 'panning' and 'volume' of the sound. When users tilt their head from left to right, the sound maps linearly to the left and right audio channel panning, while the front and back tilt changes the volume levels.
       </p>
-
     </div>
 
-  </section> <!-- end of project section  -->
+  </section>
+  <!-- end of project container section  -->
 
-
-
-</div> <!-- end of grid containter  -->
+</div>
+<!-- end of grid containter  -->
 
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js" charset="utf-8"></script>

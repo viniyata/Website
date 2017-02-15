@@ -1,48 +1,4 @@
-@media all and (max-width:1200px) {
-      .col-1{ width: 33.33%;    }
-  }
 
-  @media (max-width:800px) {
-        .col-1{ width: 33.33%;    }
-
-        .header-img{
-          align-content: center;
-        }
-
-        .right-column{
-        display: none !important;
-        }
-        .project-filter{
-          display: none;
-        }
-        .projects{
-          top: 50px !important;
-          min-width: 100% !important;
-          left: 0 !important;
-        }
-        .drawer-nav{
-          display: list-item;
-          width:100%;
-          z-index: 99999999999 !important;
-          font-family: fedraSansBookSC !important;
-          font-size:11px;
-          letter-spacing: 2px;
-          line-height:0%;
-        }
-        .navigation{
-          display: none;
-          align-content: center;
-          font-family: fedraSerifNormal;
-          padding:0 0 0 0;
-          list-style: none;
-          width: 12.66% !important;
-
-          -moz-transform:rotate(90deg);
-          -ms-transform:rotate(90deg);
-          -o-transform:rotate(90deg);
-          -webkit-transform:rotate(90deg);
-        }
-    }
 
   /* put all media queries inside one  */
 
@@ -72,6 +28,12 @@
 }
 
 @font-face {
+  font-family: fedraSerifBookItalic;
+  src: url('../fonts/FedraSerifA-BookItalic.otf');
+}
+
+
+@font-face {
   font-family: fedraSansBookSC;
   src: url('../fonts/FedraSans-BookSC.otf');
 }
@@ -86,11 +48,14 @@
   src: url('../fonts/FedraSans-Book.otf');
 }
 
-
+header{
+  /*display: none;*/
+}
 
 html{
   margin: 0;
   padding: 0;
+  height: 100%;
   }
 
 body{
@@ -187,7 +152,8 @@ hr{
 
 .filter-block{
   position: fixed;
-  left: 13%;
+  left: 87.5%;
+  top: 34%;
   z-index: 1000;
 }
 
@@ -227,8 +193,16 @@ hr{
 
 /*-- .navigation : sub-divs -- */
 .header-img{
-  padding-left:10%;
-  padding-top:12%;
+  padding-left:15%;
+  padding-top:20%;
+}
+
+.menu-img{
+  display: none;
+}
+
+.in-menu-img{
+  display: none;
 }
 
 .nav-menu{
@@ -253,7 +227,6 @@ hr{
   /*font-family: fedraSansBookItalic;
   letter-spacing: 1px;
   font-size:12px;*/
-
 }
 
 #nav-menu-leading{
@@ -320,6 +293,7 @@ hr{
 
 .project-filter{
   font-size: 15pt;
+  line-height: 20pt;
   width: 16.66%;
   top:0;
   left:0;
@@ -328,23 +302,16 @@ hr{
 
 
 #answers{
-  height: 50%;
-  margin: 20% 0% 30% 0%;
-
   clear: right;
-
 }
 
 #questions{
-  height:50%;
-  margin: 30% 0% 0% 100%;
-
   -moz-transform:rotate(-180deg);
   -ms-transform:rotate(-180deg);
   -o-transform:rotate(-180deg);
   -webkit-transform:rotate(-180deg);
 
-  transform-origin: left top;
+  transform-origin: right center;
 }
 
 #all{
@@ -413,6 +380,35 @@ hr{
 
 /*-- inside project -- */
 
+.project-summary{
+  display: inline-block;
+  position: fixed;
+  left: 2.5%;
+  right: 85%;
+  top: 10%;
+}
+
+.summary-project-title{
+  display: inline-block;
+  font-family: fedraSansBookSC;
+  letter-spacing: 0px;
+  font-size: 1.3em;
+  margin-top: 42px;
+  margin-bottom: 0;
+  color: #4A90E2;
+
+}
+
+.summary-intro-text{
+  font-family: fedraSerifBook;
+  font-size: 11px;
+}
+
+.summary-text{
+  font-family: fedraSerifBook;
+  font-size: 11px;
+}
+
 .right-column-inside{
   display: inline-block;
   position:fixed;
@@ -475,7 +471,7 @@ list-style: none;
   font-family: fedraSansBook;
   font-size: 16px;
   line-height: 24px;
-  color: #4A90E2;
+  /*color: #4A90E2;*/
 }
 
 .project-title{
@@ -492,15 +488,15 @@ color: #4A90E2;
 
 #project-credits{
 position: fixed;
-font-size: 12px;
-line-height: 16px;
+font-size: 10px;
+line-height: 12px;
 padding-right: 2%;
 top: 81.5%;
 }
 
 #copyright{
 position: fixed;
-font-size: 11px;
+font-size: 10px;
 bottom: 3%;
 
 }
@@ -580,3 +576,135 @@ line-height: 26px;
    text-align: center;
    color: black;
   }*/
+
+  @media all and (max-width:1200px) {
+        .col-1{ width: 33.33%;    }
+    }
+
+    @media (max-width:800px) {
+          .col-1 {
+            width: 33.33%;
+          }
+
+          .right-column{
+            display: none !important;
+          }
+          .project-filter{
+            display: none;
+          }
+          .projects{
+            top: 8% !important;
+            min-width: 100% !important;
+            left: 0 !important;
+          }
+
+          .menu-img{
+            display: block !important;
+            position: fixed;
+            top: 25px;
+            left: 34px;
+            padding: 0 !important;
+            margin: 0 !important;
+            z-index: 999999;
+          }
+
+          .in-menu-img{
+            display: block !important;
+            position: fixed;
+            top: 25px;
+            left: 34px;
+            padding: 0 !important;
+            margin: 0 !important;
+            z-index: 999999;
+          }
+
+          /*.header-img{
+            display: block;
+            position: fixed;
+            top: 25px;
+            left: 34px;
+            padding: 0 !important;
+            margin: 0 !important;
+            z-index: 999999;
+          }*/
+
+          .drawer-nav{
+            display: list-item;
+            width:40%;
+            z-index: 9999999999 !important;
+            font-family: fedraSansBookSC !important;
+            font-size:11px;
+            letter-spacing: 2px;
+            line-height:10%;
+          }
+
+          .drawer-menu{
+            line-height: 50%;
+          }
+
+          .drawer--top.drawer-open .drawer-nav {
+            top: 63px;
+          }
+
+          .drawer--top .drawer-nav {
+            top: -100%;
+            left: 19px;
+             width: 35.5%;
+            /* padding: 0; */
+            height: auto;
+            max-height: 100%;
+            -webkit-transition: top .6s cubic-bezier(.19, 1, .22, 1);
+            transition: top .6s cubic-bezier(.19, 1, .22, 1);
+          }
+
+
+          .navigation{
+            display: none;
+            /*align-content: center;
+            font-family: fedraSerifNormal;
+            padding:0 0 0 0;
+            list-style: none;
+            width: 12.66% !important;*/
+
+            -moz-transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+            -webkit-transform:rotate(90deg);
+          }
+
+          header{
+            display: inline;
+          }
+
+          .header-img{
+            display: none;
+          }
+
+          .project-summary{
+            display: hidden;
+          }
+
+          .projects-inside {
+            position: fixed !important;
+            width: 100% !important;
+            left: 1.5% !important;
+            top: 0 !important;
+            bottom: 0 !important;
+            z-index: 950 !important;
+          }
+
+          .project-intro-text {
+            position: fixed;
+            top: 8%;
+            left: 1.5%;
+            width: 97%;
+          }
+
+          .image-scroll{
+            top: 45%;
+          }
+
+          .in-lines{
+            display: none;
+          }
+    }

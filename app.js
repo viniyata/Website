@@ -49,13 +49,4 @@ $('.project-filter').click(function(){
 
 
 
-$('.image-scroll li').each(function(index, value) {
-    scroll(function() {
-        $(value).show().siblings().hide();
-    }, 1000 * (index + 1));
-});
-
-
-
-
 });

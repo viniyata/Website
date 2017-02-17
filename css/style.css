@@ -420,53 +420,25 @@ hr{
   right: 3%;
 }
 
-.image-scroll{
+.swiper-container {
   width:97%;
-  position:relative;
   height:77%;
   display:inline-block;
   position:relative;
   top: 4%;
-  overflow-x: hidden;
-  padding-left: 0px;
-  margin-top: 0px;
-  /*z-index: 950;*/
+  margin: 0;
 }
 
-.false-image-scroll{
-  display:inline-block;
-  position:fixed;
-  background-color: white;
-  opacity: 0;
-  height:77%;
-  width:97%;
-  top: 4%;
-  overflow-x: hidden;
-  padding-left: 0px;
-  margin-top: 0px;
-  z-index: 1000;
+.swiper-button-prev{
+
 }
 
 #image-list{
 list-style: none;
 }
 
-.feedback{
-  position:fixed;
-  display:inline-block;
-  top: 30px;
-  left: 30px;
-  widht: 50px;
-  height: 100px;
-  text-decoration-color: white;
-  background-color: blue;
-}
-
 .project-intro-text{
-  /*position: fixed;
-  top: 81%;
-  bottom: 2.4%;*/
-  left: 19%;
+  padding-top: 2%;
   width: 83%;
 }
 
@@ -661,17 +633,6 @@ line-height: 26px;
             display: block;
             position: relative;
             width: 100%;
-            /*display: none;*/
-            /*align-content: center;
-            font-family: fedraSerifNormal;
-            padding:0 0 0 0;
-            list-style: none;
-            width: 12.66% !important;*/
-/*
-            -moz-transform:rotate(90deg);
-            -ms-transform:rotate(90deg);
-            -o-transform:rotate(90deg);
-            -webkit-transform:rotate(90deg);*/
           }
 
           header{
@@ -685,7 +646,7 @@ line-height: 26px;
           .project-summary{
             display: block;
             position: relative;
-            top: 20% !important;
+            padding-top: 6%;
             width: 100%;
           }
 
@@ -703,10 +664,8 @@ line-height: 26px;
           }
 
           .project-intro-text {
-            /*position: fixed;
-            top: 8%;
-            left: 1.5%;*/
             width: 97%;
+            padding-top: 6%;
           }
 
           .image-scroll{
@@ -725,6 +684,7 @@ line-height: 26px;
           }
 
           .summary-text {
-            line-height: 9px;
+            margin-bottom: -9px;
           }
+
     }

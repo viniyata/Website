@@ -389,6 +389,31 @@ hr{
   top: 10%;
 }
 
+.publication-links{
+  display: inline-block;
+  position: fixed;
+  left: 2.5%;
+  right: 85%;
+  bottom: 19%;
+}
+
+.ed-name{
+  color: #4A90E2 !important;
+  font-weight: bold;
+  font-size: 11.5px;
+  line-height: 20px;
+}
+.ed-name-selected{
+  color: #ff00d8 !important;
+  font-weight: bold;
+  font-size: 11.5px;
+  line-height: 20px;
+}
+
+.text-link{
+  color: #4A90E2 !important;
+}
+
 .summary-project-title{
   display: inline-block;
   font-family: fedraSansBookSC;
@@ -397,7 +422,6 @@ hr{
   margin-top: 42px;
   margin-bottom: 0;
   color: #4A90E2;
-
 }
 
 .summary-intro-text{
@@ -442,7 +466,7 @@ list-style: none;
 
 .project-intro-text{
   padding-top: 2%;
-  width: 83%;
+  width: 80%;
 }
 
 #intro-text-styling{

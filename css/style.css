@@ -730,3 +730,16 @@ line-height: 26px;
           }
 
     }
+
+.dummy-hover{
+  display: none;
+}
+.hover-active{
+  display: inline;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+swiper-text-hidden {
+  display: none;
+}

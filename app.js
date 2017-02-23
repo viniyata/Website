@@ -1,10 +1,7 @@
 $(document).ready(function(){
   //$('.nav-menu').css('width', '50%');
+
   $('.drawer').drawer();
-
-   $( '#nav-menu-leading:first' ).append( $( "<span id='project-name'>  / HYPER HEADPHONES</span>" ) );
-  //  $('a:first').text('/ hyper headphones');
-
 
 
 ////////// ** Project Selectors ** /////////////
@@ -41,12 +38,31 @@ $('.project-filter').click(function(){
 
 //////////////////////inside project////////////////////////
 
-// $('.false-image-scroll').scroll(function(){
-//   var scroll_top = $(this).scrollTop();
-//   console.log(scroll_top);
-//   // $(scroll_top).show().siblings().hide();
-// });
+
+// when image changes, replace the text
+
+//select the current active div
+
+
+//  $('a:first').text('/ hyper headphones');
 
 
 
 });
+
+function changeText() {
+  a = $(".swiper-slide-active");
+
+  //find the text in that div
+  text = a[0].children[1].innerHTML;
+
+  $( '#intro-text-styling' ).text(text );
+}
+
+
+$('#answers').hover(function(){
+  $('.dummy-hover').addClass("hover-active");
+  },
+  function () {
+    $('.dummy-hover').removeClass("hover-active");
+})

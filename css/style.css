@@ -533,7 +533,7 @@ bottom: 3%;
 }
 
 #bio-text{
-font-family: fedraSerifBook;
+font-family: fedraSansBook;
 font-size: 18px;
 color: #4A90E2;
 line-height: 26px;
@@ -729,16 +729,33 @@ line-height: 26px;
             display: flex;
           }
 
+          #copyright {
+            position: relative;
+            display: flex;
+          }
+          /*.swiper-text-hidden{
+            display: hidden;
+          }*/
     }
 
-.dummy-hover{
+.dummy-hover-answers{
   display: none;
 }
+
+.dummy-hover-questions{
+  display: none;
+}
+
+.hover-text{
+  color: #ff00d8;
+}
+
 .hover-active{
   display: inline;
   position: absolute;
-  top: 50px;
-  left: 0;
+  top: 30%;
+  left: 2%;
+
 }
 swiper-text-hidden {
   display: none;

@@ -61,8 +61,15 @@ function changeText() {
 
 
 $('#answers').hover(function(){
-  $('.dummy-hover').addClass("hover-active");
+  $('.dummy-hover-answers').addClass("hover-active");
   },
   function () {
-    $('.dummy-hover').removeClass("hover-active");
+    $('.dummy-hover-answers').removeClass("hover-active");
+})
+
+$('#questions').hover(function(){
+  $('.dummy-hover-questions').addClass("hover-active");
+  },
+  function () {
+    $('.dummy-hover-questions').removeClass("hover-active");
 })

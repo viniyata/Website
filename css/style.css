@@ -504,6 +504,7 @@ bottom: 3%;
 }
 
 
+
 /*-- about -- */
 
 .bio-section{
@@ -538,6 +539,21 @@ color: #4A90E2;
 line-height: 26px;
 }
 
+.skills{
+  position: relative;
+  display: flex;
+  width: 14%;
+  left: 38.7%;
+  top: 23%;
+}
+
+#skills{
+font-family: fedraSansBook;
+font-size: 18px;
+color: #4A90E2;
+line-height: 26px;
+}
+
 
 /*-- content columns -- */
 [class*='col-'] {
@@ -550,42 +566,15 @@ line-height: 26px;
 
     .col-1{
        width: 16.66%;
-
    }
-   /*.col-2{
-       width: 33.33%;
-   }
-   .col-3{
-       width: 50%;
-   }
-   .col-4{
-       width: 66.664%;
-   }
-   .col-5{
-       width: 83.33%;
-   }
-   .col-6{
-       width: 100%;
-   }*/
 
-   /*.outline, .outline *{
-           outline: 0.5px solid #000000;
-       }*/
-
-
-
-/*[class*='col-'] > p {
-   padding: 0;
-   margin: 0;
-   text-align: center;
-   color: black;
-  }*/
 
   @media all and (max-width:1200px) {
         .col-1{ width: 33.33%;    }
     }
 
     @media (max-width:800px) {
+
       .grid-container {
         display: flex;
         flex-direction: column;
@@ -642,12 +631,12 @@ line-height: 26px;
           }
 
           .drawer--top.drawer-open .drawer-nav {
-            top: 63px;
+            top: 93px;
           }
 
           .drawer--top .drawer-nav {
             top: -100%;
-            left: 19px;
+            left: 51px;
              width: 35.5%;
             /* padding: 0; */
             height: auto;
@@ -655,7 +644,6 @@ line-height: 26px;
             -webkit-transition: top .6s cubic-bezier(.19, 1, .22, 1);
             transition: top .6s cubic-bezier(.19, 1, .22, 1);
           }
-
 
           .navigation{
             display: block;
@@ -669,6 +657,8 @@ line-height: 26px;
 
           .header-img{
             display: none;
+            padding-left: 15%;
+            padding-top: 10%;
           }
 
           .project-summary{
@@ -732,9 +722,15 @@ line-height: 26px;
             position: relative;
             display: flex;
           }
-          /*.swiper-text-hidden{
-            display: hidden;
-          }*/
+
+          .swiper-text-hidden{
+            display: none;
+          }
+
+          .drawer-hamburger{
+            top: 51px;
+            left: 50px;
+          }
     }
 
 .dummy-hover-answers{
@@ -754,8 +750,8 @@ line-height: 26px;
   position: absolute;
   top: 30%;
   left: 2%;
-
 }
-swiper-text-hidden {
+
+.swiper-text-hidden {
   display: none;
 }

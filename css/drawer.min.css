@@ -44,9 +44,10 @@
 }
 
 .drawer-menu-item:hover {
+  #4A90E2
     text-decoration: none;
     color: #ff00d8;
-    text-shadow: 9px 9px 3px #00ff06;
+    text-shadow: 9px 9px 3px yellow;
     background-color: transparent;
 }
 

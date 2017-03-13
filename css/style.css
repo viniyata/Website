@@ -755,3 +755,31 @@ line-height: 26px;
 .swiper-text-hidden {
   display: none;
 }
+
+/* hover tooltip project name */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    font-family: fedraSansBookSC;
+    /*font-weight: bold;*/
+    visibility: hidden;
+    width: 120%;
+    background-color: yellow;
+    color: #4A90E2;
+    text-align:left;
+    /*border-radius: 6px;*/
+    padding: 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

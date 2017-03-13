@@ -38,7 +38,7 @@
     display: block;
     padding: 1rem;
     text-decoration: none;
-    color: #4A90E2;
+    color: #4A90E2 !important;
     /*text-shadow: 2px 2px 0px #ff000e;*/
     text-shadow: 2px 2px 0px #00ff06;
 }

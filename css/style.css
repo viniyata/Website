@@ -389,6 +389,12 @@ hr{
   top: 10%;
 }
 
+.summary-links{
+  font-family: fedraSerifBook !important;
+  font-size: 11px;
+  color: #4A90E2;
+}
+
 .publication-links{
   display: inline-block;
   position: fixed;

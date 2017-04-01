@@ -368,13 +368,7 @@ hr{
     display:inline-block;
 }
 
-.hide{
-  transform: scale(0);
-  width:0;
-  padding:0;
-  /*-webkit-transition: width 2s, height 4s;*/
-  transition: all 0.2s ease-in-out;
-}
+
 
 
 /*-- inside project -- */
@@ -856,4 +850,13 @@ width: 14.7%;
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.hide{
+  transform: scale(0);
+  width:0;
+  padding:0;
+  display: none;
+  /*-webkit-transition: width 2s, height 4s;*/
+  transition: all 0.2s ease-in-out;
 }

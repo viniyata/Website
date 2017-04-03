@@ -851,14 +851,12 @@ width: 14.7%;
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-#shift-left{
-  margin-left: -11px;
-}
+
 .hide{
   transform: scale(0);
   width:0;
   padding:0;
-  display: hidden;
+  display: none;
   /*-webkit-transition: width 2s, height 4s;*/
   transition: all 0.2s ease-in-out;
 }

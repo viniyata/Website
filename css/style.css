@@ -856,7 +856,11 @@ width: 14.7%;
   transform: scale(0);
   width:0;
   padding:0;
-  display: none;
+  display: block;
   /*-webkit-transition: width 2s, height 4s;*/
   transition: all 0.2s ease-in-out;
+}
+
+#show-transition{
+
 }

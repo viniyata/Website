@@ -462,7 +462,7 @@ list-style: none;
 }
 
 .project-intro-text{
-  padding-top: 2%;
+  padding-top: 1%;
   width: 80%;
 }
 
@@ -506,7 +506,7 @@ bottom: 3%;
 /*-- about -- */
 
 .about-bg{
-  background-color: yellow;
+  background-color: white;
 }
 
 .bio-section{

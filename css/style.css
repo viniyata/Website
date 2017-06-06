@@ -379,6 +379,7 @@ hr{
   left: 2.5%;
   right: 85%;
   top: 10%;
+  /*bottom: 19.9%;*/
 }
 
 .summary-links{
@@ -505,9 +506,9 @@ bottom: 3%;
 
 /*-- about -- */
 
-.about-bg{
+/*.about-bg{
   background-color: white;
-}
+}*/
 
 .bio-section{
   display: inline-block;
